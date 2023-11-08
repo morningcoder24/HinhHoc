@@ -36,15 +36,15 @@ public:
 		{
 			string loai = "";
 			cout << "nhap loai hinh: ";
-			getline(cin, loai);
 			cin.ignore();
+			getline(cin, loai);
 			if (loai == "elip")
 			dsHinh[i] = new HinhElip;
-	   else if (loai == "hinhtron")
+	   else if (loai == "ht")
 			dsHinh[i] = new hinhTron;
-	   else if (loai == "chunhat")
+	   else if (loai == "hcn")
 			dsHinh[i] = new HinhChuNhat;
-	   else if (loai == "hinhvuong")
+	   else if (loai == "hv")
 			dsHinh[i] = new HinhVuong;
 			dsHinh[i]->nhap();
 		}
