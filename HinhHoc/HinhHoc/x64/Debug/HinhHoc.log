@@ -1,0 +1,4 @@
+﻿  main.cpp
+D:\CA3\Trần Quốc Khánh\HinhHoc\HinhHoc\HinhElip.h(16,45): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+D:\CA3\Trần Quốc Khánh\HinhHoc\HinhHoc\main.cpp(3,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  HinhHoc.vcxproj -> D:\CA3\Trần Quốc Khánh\HinhHoc\x64\Debug\HinhHoc.exe

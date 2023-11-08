@@ -37,6 +37,7 @@ public:
 			string loai = "";
 			cout << "nhap loai hinh: ";
 			getline(cin, loai);
+			cin.ignore();
 			if (loai == "elip")
 			dsHinh[i] = new HinhElip;
 	   else if (loai == "hinhtron")
@@ -45,9 +46,14 @@ public:
 			dsHinh[i] = new HinhChuNhat;
 	   else if (loai == "hinhvuong")
 			dsHinh[i] = new HinhVuong;
-			hinh->nhap();
-			this->dsHinh[i] = hinh;
-
+			dsHinh[i]->nhap();
+		}
+	}
+	void xuat()
+	{
+		for (int i = 0; i < soLuong; i++)
+		{
+			dsHinh[i]->xuat();
 		}
 	}
 };
